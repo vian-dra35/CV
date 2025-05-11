@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>my fortopolio</title>
+  <style>
+    :root {
+      --primary-color: #1e1e2f;
+      --accent-color: #00c9a7;
+      --light-color: #f0f0f0;
+      --dark-color: #121212;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--light-color);
+      color: #333;
+      transition: all 0.3s ease;
+    }
+
+    .dark-mode {
+      background: var(--dark-color);
+      color: var(--light-color);
+    }
+
+    header {
+      background: var(--primary-color);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      border: 5px solid var(--accent-color);
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 0.5rem;
+    }
+
+    .skills span {
+      display: block;
+      margin-top: 1rem;
+    }
+
+    .progress {
+      background: #ddd;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+
+    .progress div {
+      height: 20px;
+      background: var(--accent-color);
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    .contact-form button {
+      background: var(--accent-color);
+      border: none;
+      padding: 1rem 2rem;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .toggle-mode {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: var(--accent-color);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--primary-color);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="toggle-mode" onclick="toggleMode()">Mode Gelap/Terang</button>
+
+  <header>
+    <img src="photo.jpg" alt="Foto Profil">
+    <h1>viandra adila Nugraha</h1>
+    <p>software engineering & web development</p>
+  </header>
+
+  <section>
+    <h2>Tentang Saya</h2>
+    <p>Saya adalah programmer dan pengembang web/aplikasi mobile dengan pengalaman lebih dari 1 tahun di dunia digital. Saya senang menciptakan aplikasi dan website untuk membantu pengguna dalam beraktivitas dikehidupan sehari-hari. Selain itu juga saya pernah mengikuti beberapa pelatihan yang cukup membuat saya memiliki beberapa skill dan sertifikasi resmi dari lembaga pelatihan.</p>
+  </section>
+  <section>
+    <h2>Pengalaman berorganisasi</h2>
+    <ul>
+      <li><strong>pramuka siaga.</strong> (2018)</li>
+      <li><strong>Pencak silat</strong> (2021)</li>
+       <li><strong>pasukan pengibar bendera</strong> (2023)</li>
+       <li><strong>Organisasi siswa intra sekolah</strong> (2023)</li>
+        <li><strong>Sahabat yatim indonesia</strong> (2023)</li>
+        <li><strong>save the children</strong> (2023)</li>
+         <li><strong>Karang taruna</strong> (2023)</li>
+       <li><strong>Organisasi siswa intra sekolah tingkat SMK</strong> (2024)</li>
+       <li><strong>Pasukan pengibar bendera pusaka</strong> (2024)</li>
+        <li><strong>Multimedia </strong> (2025)</li>
+    </ul>
+  </section>
+    <section>
+    <h2>Pengalaman kerja/magang</h2>
+    <ul>
+      <li><strong>Hazza packing .</strong> (packer) - (2023)</li>
+      <li><strong>PT isam</strong> (Operator produksi)-(2024)</li>
+        <li><strong>DyCode Cominfotech Development</strong> (Web server & Data analyst.) - (2025 - sekarang).</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Pendidikan</h2>
+    <ul>
+     <li><strong>TK Al-Hidayah</strong>(2013-2014)</li> 
+      <li><strong>SDN Rancamanyar 01</strong>(2015-2021)</li>
+      <li><strong>SMPN 3 Baleendah</strong> (2021 - 2024)</li>
+    </ul>
+  </section>
+  <section>
+    <h2>pelatihan yang pernah diikuti</h2>
+    <ul>
+      <li><strong>pelatihan publik speaking dan leadership</strong> (2021)</li>
+      <li><strong>pelatihan table manner dan grooming</strong> (2022)</li>
+      <li><strong>pelatihan dasar kepemimpinan siswa</strong> (2023)</li>
+      <li><strong>Pelatihan Anti Bullying dan Pengelolaan Konflik untuk Siswa</strong> (2023)</li>
+     <li><strong>pelatihan dasar kepemimpinan siswa</strong> (2024)</li>
+     <li><strong>pelatihan pencegahan dan mitigasi bencana</strong> (2024)</li>
+     <li><strong>Pelatihan Housekeeping dan Waitress</strong></strong> (2025)</li>
+     <li><strong>Pelatihan Komputer dan data analyst</strong></strong> (2025)</li>
+    </ul>
+  </section>
+  <section>
+    <h2>jabatan</h2>
+    <ul>
+      <li><strong>wakil ketua OSIS smp</strong></li>
+      <li><strong>ketua divisi humas</strong></li>
+      <li><strong>divisi bela negara</strong></li>
+      <li><strong>Sekretaris (sahabat yatim Indonesia)</strong></li>
+     <li><strong>peralatan (pencak silat ) </strong></li>
+     <li><strong>ketua (paskibra)</strong></li>
+     <li><strong>sekretaris (save the children)</strong></strong></li>
+    </ul>
+  </section>
+    <section>
+    <h2>sponsor</h2>
+    <ul>
+      <li><strong>Teh pucuk</strong></li>
+      
+      <li><strong>cleo</strong></li>
+      <li><strong>mie sedap</strong></li>
+      <li><strong>lemineral</strong></li>
+    </ul>
+  </section>
+
+  <section class="skills">
+    <h2>Keterampilan</h2>
+    <span>HTML & CSS</span>
+    <div class="progress"><div style="width: 95%"></div></div>
+
+    <span>JavaScript</span>
+    <div class="progress"><div style="width: 85%"></div></div>
+
+    <span>Photoshop & Illustrator</span>
+    <div class="progress"><div style="width: 90%"></div></div>
+    
+    <span>pyton</span>
+    <div class="progress"><div style="width: 90%"></div></div>
+    
+    <span>PHP</span>
+    <div class="progress"><div style="width: 70%"></div></div>
+    
+    <span>JAVA</span>
+    <div class="progress"><div style="width: 60%"></div></div>
+    
+    <span>C++</span>
+    <div class="progress"><div style="width: 30%"></div></div>
+  <span>photography</span>
+    <div class="progress"><div style="width: 73%"></div></div>
+  <span>data base</span>
+    <div class="progress"><div style="width: 87%"></div></div> 
+  <span>Microsoft word</span>
+    <div class="progress"><div style="width: 60%"></div></div>
+      <span>excel</span>
+    <div class="progress"><div style="width: 90%"></div></div>
+  </section>
+
+  <section>
+    <h2>Kontak</h2>
+    <form class="contact-form" onsubmit="submitForm(event)">
+      <input type="text" placeholder="Nama" required>
+      <input type="email" placeholder="Email" required>
+      <textarea rows="5" placeholder="Pesan" required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Viansdi. Seluruh Hak Dilindungi.
+  </footer>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+
+    function submitForm(e) {
+      e.preventDefault();
+      alert("Terima kasih telah mengirim pesan!");
+    }
+  </script>
+
+</body>
+</html>
